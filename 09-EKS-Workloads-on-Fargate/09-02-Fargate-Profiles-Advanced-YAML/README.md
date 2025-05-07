@@ -15,6 +15,7 @@
 ## Step-02: Create Advanced Fargate Profile with yml
 
 ### Create Fargate Profile manifest
+- Instead of creating multiple fargate profiles manually or using commands we define this profile manifest and include all the profiles over there.
 ```yml
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
