@@ -5,6 +5,7 @@ description: Learn AWS Load Balancer - Ingress SSL HTTP to HTTPS Redirect
 
 ## Step-01: Add annotations related to SSL Redirect
 - **File Name:** 04-ALB-Ingress-SSL-Redirect.yml
+- Whenever you try to access the dns name, with https or https it automatically gets redirected to https only
 - Redirect from HTTP to HTTPS
 ```yaml
     # SSL Redirect Setting
