@@ -5,7 +5,12 @@ description: Learn AWS Load Balancer Controller - Ingress SSL
 
 ## Step-01: Introduction
 - We are going to register a new DNS in AWS Route53
-- We are going to create a SSL certificate 
+- We are going to create a SSL certificate
+- This SSl or TLS certificate is ultimately attached to ingress, it decrypts the incoming https traffic to http and sends to our services. Incase we want internal traffic also to be encrypted between services or between pods we need to use service mesh.
+- we create an new DNS in route53, and we create a dns record also then in alias we give our load balancer IP.
+- so when we hit this new recoed --> traffic is forwarded to Load Balancer
+- Since we gave listen ports as both https, http this load balancer listens on both ports
+- And as we annotated ssl certificate, ingress accepts the https traffic ( internally decrpts or terminates tls)
 - Add Annotations related to SSL Certificate in Ingress manifest
 - Deploy the manifests and test
 - Clean-Up
