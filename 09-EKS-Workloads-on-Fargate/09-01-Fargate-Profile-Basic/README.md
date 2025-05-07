@@ -2,7 +2,10 @@
 
 ## Step-01: What are we going to learn?
 - **Assumptions:**
+
   - We already havea EKS Cluster whose name is **eksdemo1** created using eksctl
+  - Faster than node groups, performance, scaling , cost and for every one pod...one fargate instance will be created.
+  - they are deployed only in private subnet
   - We already have a Managed Node Group with private networking enabled with two worker nodes
 - We are going to create a fargate profile using `eksctl` on our existing EKS Cluster eksdemo1
 - We are going to deploy a simple workload
