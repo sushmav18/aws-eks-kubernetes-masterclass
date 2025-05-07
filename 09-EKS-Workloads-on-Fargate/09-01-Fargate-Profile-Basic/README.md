@@ -48,6 +48,7 @@ kubectl get pods
 ## Step-03: Create Fargate Profile on cluster eksdemo1
 ### Create Fargate Profile
 ```
+- Here namespace is the mainthing in fargate , if any deployments or services are deployed in the namespace as fargate profile then they will be managed by aws fargate
 # Get list of Fargate Profiles in a cluster
 eksctl get fargateprofile --cluster eksdemo1
 
