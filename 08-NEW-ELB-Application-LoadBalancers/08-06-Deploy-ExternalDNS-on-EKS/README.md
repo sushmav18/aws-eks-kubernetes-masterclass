@@ -4,7 +4,10 @@ description: Learn AWS Load Balancer Controller - External DNS Install
 ---
 
 ## Step-01: Introduction
-- **External DNS:** Used for Updating Route53 RecordSets from Kubernetes 
+- **External DNS:** Used for Updating Route53 RecordSets from Kubernetes
+- This is an option just to skip the manually adding dns recots in record53 and aliasing to load balancer.
+- Like how we use ingress controller to create an loadbalancer in aws env...we deploy this external-dns pod and it automatically adds that host to dns records
+- But however we need to refer the certificate arn ....for the decrption in ingress side.
 - We need to create IAM Policy, k8s Service Account & IAM Role and associate them together for external-dns pod to add or remove entries in AWS Route53 Hosted Zones. 
 - Update External-DNS default manifest to support our needs
 - Deploy & Verify logs
