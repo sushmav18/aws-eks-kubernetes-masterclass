@@ -3,6 +3,10 @@
 ## Step-01: What are we going to learn?
 - We are going to learn about writing Fargate Profiles using YAML wherein with YAML we can create multiple fargate profiles at a time. 
 - Understand about `namespaces and labels` in `fargate profiles`
+- For mixed mode deployment, seperate ingress have to be created beacuse : ec2 type is target type instance : instance, but for fargate its target IP
+- INGRESS with CROSS NAMESPACE FUNCTIONALITY is not supported.
+- So when we using multiple namespaces--multi ingress has to be defined 
+- Mainly all the apps are deployed in different namespaces....but AS of today ingress in not cross namespace functional and thus seperate ingress are created
 - Deploy 3 Apps in a mixed Mode
   - 2 Apps to 2 different Fargate Profiles
   - 1 App to EKS EC2 Manged Node Group
